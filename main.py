@@ -4,12 +4,12 @@ app = Flask(__name__)
 
 
 @app.route("/about")
-def portfolio_():
+def about():
     return render_template("about.html")
 
 
 @app.route("/highlights")
-def portfolio_():
+def hightlights_():
     return render_template("highlights.html")
 
 
@@ -19,12 +19,12 @@ def index():
 
 
 @app.route("/latest")
-def index():
+def latest():
     return render_template("latest.html")
 
 
 @app.route("/menu")
-def portfolio_():
+def menu_():
     return render_template("menupage.html")
 
 
@@ -37,7 +37,7 @@ def portfolio_():
 
 
 @app.route("/gallery")
-def portfolio_():
+def gallery():
     return render_template("Portfolio.html")
 
 

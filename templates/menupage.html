@@ -5,9 +5,32 @@
     <title>Menu</title>
     <meta charset="utf-8"/>
     <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='menustyle.css') }}">
 </head>
 <body>
-    <p>menupage</p>
+<div>
+    <div id="container" style="background-color:blue" >
+        <div id="first" class="col-lg-11">
+        <div class="col col-lg-6"  style="background-color:red">
+           <div> <h2 class="col-lg-6" >Div1.11</h2></div>
+                <div class="col-xs-8 col-ms-6 col-sm-6 col-md-4 col-lg-4 pull-right"><button class="btn btn-primary btn-lg btn-block">Portfolio</button>
+                </div>
+                <div class="col-xs-8 col-ms-6 col-sm-6 col-md-4 col-lg-4 pull-right"><button class="btn btn-primary btn-lg btn-block">Highlights</button>
+                </div>
+                <div class="col-xs-8 col-ms-6 col-sm-6 col-md-4 col-lg-4 pull-right"><button class="btn btn-primary btn-lg btn-block">Latest</button>
+                </div>
+                <div class="col-xs-8 col-ms-6 col-sm-6 col-md-4 col-lg-4 pull-right"><button class="btn btn-primary btn-lg btn-block">About</button>
+                </div>
+        </div>
+        </div>
+
+        <div id="second" class="col col-lg-6" style="background-color: green">
+            <div><h2>Div1.2</h2></div>
+                <div><h2>Div7</h2></div>
+                <div><h2>Connect</h2></div>
+        </div>
+        
+    </div>
+</div>
 </body>
 </html>

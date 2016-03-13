@@ -1,0 +1,29 @@
+#row1{
+    display:flex;
+    flex-direction:row;
+justify-content: space-around;
+
+}
+#header {
+    width: 100%;
+    background-color: red;
+
+}
+
+#container {
+
+    background-color: #ffcc33;
+    margin: auto;
+}
+#first {
+
+    float: left;
+
+        background-color: blue;
+}
+#second {
+
+    float: left;
+
+    background-color: green;
+}
