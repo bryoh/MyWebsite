@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Menu</title>
-    <meta charset="utf-8"/>
-    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='menustyle.css') }}">
-</head>
-<body>
-<div>
-    <div id="container" style="background-color:blue" >
-        <div id="first" class="col-lg-11">
-        <div class="col col-lg-6"  style="background-color:red">
-           <div> <h2 class="col-lg-6" >Div1.11</h2></div>
-                <div class="col-xs-8 col-ms-6 col-sm-6 col-md-4 col-lg-4 pull-right"><button class="btn btn-primary btn-lg btn-block">Portfolio</button>
-                </div>
-                <div class="col-xs-8 col-ms-6 col-sm-6 col-md-4 col-lg-4 pull-right"><button class="btn btn-primary btn-lg btn-block">Highlights</button>
-                </div>
-                <div class="col-xs-8 col-ms-6 col-sm-6 col-md-4 col-lg-4 pull-right"><button class="btn btn-primary btn-lg btn-block">Latest</button>
-                </div>
-                <div class="col-xs-8 col-ms-6 col-sm-6 col-md-4 col-lg-4 pull-right"><button class="btn btn-primary btn-lg btn-block">About</button>
-                </div>
-        </div>
-        </div>
+    <!-- Bootstap paths and links-->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap-responsive.css') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap-responsive.min.css') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename='js/bootstrap.min.js') }}">
+    <link media="screen" rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css') }}">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <div id="second" class="col col-lg-6" style="background-color: green">
-            <div><h2>Div1.2</h2></div>
-                <div><h2>Div7</h2></div>
-                <div><h2>Connect</h2></div>
-        </div>
-        
+
+    <!-- Files created by me -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css') }}">
+
+
+</head>
+
+
+<body>
+   <!-- <div id="divlayer" style="background-color: blue" class="container-fluid" > -->
+
+<div class="container-fluid">
+  <div class="col-fluid">
+    <div id="divlayer" style="background-color: blue" class="span2 ">
+      <!--Sidebar content-->
+        <button class="btn btn-primary btn-lg btn-block">Portfolio</button>
+        <button class="btn btn-primary btn-lg btn-block">Highlights</button>
+        <button class="btn btn-primary btn-lg btn-block">Latest</button>
+        <button class="btn btn-primary btn-lg btn-block">About</button>          
     </div>
+
+    <div id="divlayer" style="background-color: red" class="span10">
+    Random  text
+    </div>
+ 
 </div>
 </body>
 </html>
