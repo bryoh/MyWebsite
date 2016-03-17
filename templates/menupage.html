@@ -15,28 +15,53 @@
     <!-- Files created by me -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css') }}">
+    <script rel="stylesheet" href="{{url_for('static',filename='js/jquery.js')}}"></script>
 
 
 </head>
 
 
 <body>
-   <!-- <div id="divlayer" style="background-color: blue" class="container-fluid" > -->
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+            <!--
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Start Bootstrap
+                    </a>
+                </li>
+            -->
+                <!--Sidebar content-->
+                <button class="btn btn-primary btn-lg btn-block">Portfolio</button>
+                <button class="btn btn-primary btn-lg btn-block">Highlights</button>
+                <button class="btn btn-primary btn-lg btn-block">Latest</button>
+                <button class="btn btn-primary btn-lg btn-block">About</button>          
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
 
-<div class="container-fluid">
-  <div class="col-fluid">
-    <div id="divlayer" style="background-color: blue" class="span2 ">
-      <!--Sidebar content-->
-        <button class="btn btn-primary btn-lg btn-block">Portfolio</button>
-        <button class="btn btn-primary btn-lg btn-block">Highlights</button>
-        <button class="btn btn-primary btn-lg btn-block">Latest</button>
-        <button class="btn btn-primary btn-lg btn-block">About</button>          
-    </div>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2> Page content</h2>
 
-    <div id="divlayer" style="background-color: red" class="span10">
-    Random  text
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
     </div>
- 
-</div>
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
 </body>
 </html>
