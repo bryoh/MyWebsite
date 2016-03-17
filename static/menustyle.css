@@ -38,3 +38,25 @@
 @media only screen and (max-width: 480px) {
     .span_2_of_2, .span_1_of_2 { width: 100%; }
 }
+
+.hamburger
+  margin-top: 50px
+  margin-left: 50px
+.hamburger span
+  background: white
+  border-radius: 3px
+  display: block
+  margin-bottom: 3px
+  transition: 0.3s all ease
+  height: 3px
+  width: 30px
+.hamburger span:nth-child(1)
+  width: 25px
+.hamburger span:nth-child(2)
+  width: 20px
+.hamburger:hover span:nth-child(3)
+  width: 25px
+.hamburger:hover span:nth-child(2)
+  width: 30px
+.hamburger:hover span:nth-child(1)
+  width: 20px
