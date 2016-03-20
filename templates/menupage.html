@@ -6,64 +6,73 @@
     <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap-responsive.css') }}">
     <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap-responsive.min.css') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/font-awesome.css') }}">
+
     <link rel="stylesheet" href="{{url_for('static',filename='js/bootstrap.min.js') }}">
     <link media="screen" rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css') }}">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 
     <!-- Files created by me -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css') }}">
-    <script rel="stylesheet" href="{{url_for('static',filename='js/jquery.js')}}"></script>
-
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='menustyle.css') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename='js/jquery.js')}}">
+    <script src="{{url_for('static',filename='js/jquery.js')}}"></script>
+    <script src="{{url_for('static',filename='js/npm.js')}}"></script>
 
 </head>
 
-
 <body>
+
     <div id="wrapper">
+        <!-- top navbar -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+           <div class="container">
+                <div class="navbar-header">
+                    <a href="#menu-toggle" class="navbar-brand" id="menu-toggle">
+                         <i class="fa fa-bars" style="font-size:48px;color:red"></i>
+                   </a>
+                   <a class="navbar-brand" href="#">Project name</a>
+                </div>
+           </div>
+        </div>
+
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
-            <!--
-                <li class="sidebar-brand">
-                    <a href="#">
-                        Start Bootstrap
-                    </a>
-                </li>
-            -->
-                <!--Sidebar content-->
-                <button class="btn btn-primary btn-lg btn-block">Portfolio</button>
-                <button class="btn btn-primary btn-lg btn-block">Highlights</button>
-                <button class="btn btn-primary btn-lg btn-block">Latest</button>
-                <button class="btn btn-primary btn-lg btn-block">About</button>          
+                 <li class="active"><a href="#">Portfolioo</a></li>
+                        <li><a href="#">Highlights</a></li>
+                        <li><a href="#">Latest</a></li>
+                        <li><a href="#">About</a></li>    
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
+
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2> Page content</h2>
-                        <div class="hamburger"><button></button></div>
-
                         
+                        <h1>Shrink Width to Collapse Sidebarr</h1>
+                        <h2> Page content</h2>
+                        <!-- <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a> -->
                     </div>
                 </div>
             </div>
         </div>
         <!-- /#page-content-wrapper -->
+
     </div>
+ <!-- #page container -->
     <!-- Menu Toggle Script -->
     <script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
-    $("")
-    });
+    });    
     </script>
 </body>
 </html>
