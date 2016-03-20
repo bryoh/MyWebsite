@@ -28,7 +28,7 @@ def menu_():
     return render_template("menupage.html")
 
 
-@app.route("/portfolio")
+@app.route("/p")
 def portfolio_():
     return render_template("Portfolio.html")
 
