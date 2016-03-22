@@ -43,6 +43,3 @@ function getHorizontalPadding(elem)
     padding += parseInt(right ? right.replace("px", "") : 0);
     return padding;
 }
-
-$(window).load(scaleGallery);
-$(window).resize(scaleGallery);
