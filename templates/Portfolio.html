@@ -3,12 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
-    <meta charset="utf-8"/>
-    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/font-awesome.css') }}">
+
+	<script type=text/javascript src="{{url_for('static', filename='js/jquery.js') }}"></script>
+
+    <link media="screen" rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css') }}">
+   	<link href="{{url_for('static',filename='js/bootstrap.min.js') }}">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap-responsive.css') }}">    
+    <link href="{{url_for('static',filename='js/bootstrap.js') }}">
+
+    
+    <link rel="stylesheet" href="{{url_for('static',filename='css/lightbox.css') }}">
+    <link href="{{url_for('static',filename='js/lightbox.js') }}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- files created by me !-->
     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='Portfolio.css') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename='js/Portfolio.js')}}">
+    
 </head>
 <body>
     <p>Portfolio page</p>
+    <div class="gallery">
+    	<div class="row">
+    		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+    		<!-- <a href="images/image-1.jpg" data-lightbox="image-1" data-title="My caption">Image #1</a> 
+    			<a href="{{url_for('static',filename='css/Images/Portfolio/01.jpg')}}" class="image" data-lightbox="{{url_for('static',filename='css/Images/Portfolio/01.jpg')}}" data-title="My caption">
+    			-->
+    			<a href="{{url_for('static',filename='css/Images/Portfolio/01.jpg')}}" class="image" data-title="My caption" data-lightbox="Portfolio">
+    			<img class="img-responsive" alt="1"  src="{{url_for('static',filename='css/Images/Portfolio/01.jpg')}}">
+    			</a>
+    		</div>
 
+    		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+    			<a href="{{url_for('static',filename='css/Images/Portfolio/02.jpg')}}" class="image" data-title="My caption" data-lightbox="Portfolio">
+    			<img class="img-responsive" alt="2" src="{{url_for('static',filename='css/Images/Portfolio/02.jpg')}}">
+    			</a>
+    		</div>
+
+    		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+    			<a href="{{url_for('static',filename='css/Images/Portfolio/03.jpg')}}" class="image" data-title="My caption" data-lightbox="Portfolio">
+    			<img class="img-responsive" alt="3" src="{{url_for('static',filename='css/Images/Portfolio/03.jpg')}}">
+    			</a>
+    		</div>
+
+    		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+    			<a href="{{url_for('static',filename='css/Images/Portfolio/01.jpg')}}" class="image" data-title="My caption" data-lightbox="Portfolio">
+    			<img class="img-responsive"alt="4" src="{{url_for('static',filename='css/Images/Portfolio/01.jpg')}}">
+    			</a>
+    		</div>
+    	</div><!-- End of row 1 -->
+
+    	<div class="row">
+    		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+    			<a href="{{url_for('static',filename='css/Images/Portfolio/09.jpg')}}" class="image" data-title="My caption" data-lightbox="Portfolio">
+    			<img class="img-responsive" alt="1" src="{{url_for('static',filename='css/Images/Portfolio/09.jpg')}}">
+    			</a>
+    		</div>
+
+    		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+    			<a href="{{url_for('static',filename='css/Images/Portfolio/03.jpg')}}" class="image" data-title="My caption" data-lightbox="Portfolio">
+    			<img class="img-responsive" alt="2" src="{{url_for('static',filename='css/Images/Portfolio/01.jpg')}}">
+    			</a>
+    		</div>
+
+    		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+    			<a href="{{url_for('static',filename='css/Images/Portfolio/01.jpg')}}" class="image" data-title="My caption" data-lightbox="Portfolio">
+    			<img class="img-responsive" alt="3" src="{{url_for('static',filename='css/Images/Portfolio/03.jpg')}}">
+    			</a>
+    		</div>
+
+    		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+    			<a href="{{url_for('static',filename='css/Images/Portfolio/02.jpg')}}" class="image" data-title="My caption" data-lightbox="Portfolio">
+    			<img class="img-responsive" alt="4" src="{{url_for('static',filename='css/Images/Portfolio/02.jpg')}}">
+    			</a>
+    		</div>
+    	</div><!-- End of row 2 -->
+
+    	<div class="row">
+    		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+    			<a href="{{url_for('static',filename='css/Images/Portfolio/09.jpg')}}" data-title="My caption" data-lightbox="Portfolio">
+    			<img class="img-responsive" alt="1" src="{{url_for('static',filename='css/Images/Portfolio/09.jpg')}}">
+    			</a>
+    		</div>
+
+    		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="background-color: yellow">
+    			<a href="{{url_for('static',filename='css/Images/Portfolio/05.jpg')}}" class="image" data-title="My caption" data-lightbox="Portfolio">
+    			<img class="img-responsive" alt="2" src="{{url_for('static',filename='css/Images/Portfolio/05.jpg')}}">
+    			</a>
+    		</div>
+
+    		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+    			<a href="{{url_for('static',filename='css/Images/Portfolio/06.jpg')}}" class="image" data-title="My caption" data-lightbox="Portfolio">
+    			<img class="img-responsive" alt="3" src="{{url_for('static',filename='css/Images/Portfolio/06.jpg')}}">
+    			</a>
+    		</div>
+
+    		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+    			<a href="{{url_for('static',filename='css/Images/Portfolio/01.jpg')}}" class="image" data-title="My caption" data-lightbox="Portfolio">
+    			<img class="img-responsive" alt="4" src="{{url_for('static',filename='css/Images/Portfolio/01.jpg')}}">
+    			</a>
+    		</div>
+    	</div><!-- End of row 3 -->
+
+</div>
+
+    <script src="{{url_for('static',filename='js/lightbox.js')}}"></script> <!-- for the carousel -->
+    <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/Portfolio.js')}}"></script>
+    <!--
+<script type="text/javascript">
+	$(window).load(scaleGallery);
+	$(window).resize(scaleGallery);
+</script>
+-->
 </body>
 </html>
