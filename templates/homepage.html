@@ -2,13 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Model Homepage</title>
     <meta charset="utf-8"/>
     <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/timeline/style.css') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/timeline/reset.css') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/landingpage.css' )}}">
+    <script src="{{url_for('static',filename='js/timeline/js/modernizr.js')}}"></script>
+
+    <script src="{{url_for('static',filename='js/jquery.js')}}"></script>
+
+
 </head>
 <body>
-    <p>homepage</p>
+<div class="cd-projects-container">
+<button class="cd-nav-trigger">Menu<span aria-hidden="true" class="cd-icon"></span></button>
+<nav class="cd-primary-nav">
+        <ul>
+            <li class="cd-label">Navigation</li>
+            <li><a href="#0">Blah1</a></li>
+            <li><a href="#0">Blah2</a></li>
+            <li><a href="#0">Blah 3</a></li>
+            <li><a href="#0">Connect with me</a></li>
+        </ul>
+    </nav> 
+    <!-- .cd-primary-nav -->
+        <ul>
+            <li class="single-project">
+                <div class="cd-title">
+                    <h2>Project1</h2>
+                </div> <!-- .cd-title -->
 
-</body>
+                <div class="cd-project-info">
+                    <button class="cd-scroll">Scroll down</button>
+                    
+                    <div class="content-wrapper">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                        </p>
+                    </div>
+                </div> <!-- .cd-project-info -->
+            </li>
+
+            <li class="single-project">
+                <div class="cd-title">
+                    <h2>Project 2</h2>
+                </div> <!-- .cd-title -->
+
+                <div class="cd-project-info">
+                    <button class="cd-scroll">Scroll down</button>
+
+                    <div class="content-wrapper">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur 
+                        </p>
+                    </div>
+                </div> <!-- .cd-project-info -->
+            </li>
+
+            <li class="single-project">
+                <div class="cd-title">
+                    <h2>Project 3</h2>
+                </div> <!-- .cd-title -->
+
+                <div class="cd-project-info">
+                    <button class="cd-scroll">Scroll down</button>
+                    
+                    <div class="content-wrapper">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur 
+                        </p>
+                    </div>
+                </div> <!-- .cd-project-info -->
+            </li>
+        </ul>
+</div> <!-- .cd-projects-container -->
+<script type="text/javascript" src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static',filename='js/jquery.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static',filename='js/landingpage.js')}}"></script>
+<!-- 
+ <script src="../static/js/bootstrap.min.js"></script>
+ <script src="../static/js/jquery.js"></script>
+ <script src="../static/js/landingpage.js"></script> -->
+</body>    
+
+
 </html>
