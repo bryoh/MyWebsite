@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <title>Homepage</title>
 
-    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../static/css/font-awesome.css">
     <link rel="stylesheet" href="blah.css">
+
+
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../static/css/timeline/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="../static/css/timeline/style.css"> <!-- Resource style -->
+    <script src="../static/js/timeline/js/modernizr.js"></script> <!-- Modernizr -->
+
 
     <script type=text/javascript src="../static/js/jquery.js"></script>
 
@@ -18,9 +23,6 @@
 
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="../static/css/lightbox.css">
-    <link href="../static/js/lightbox.js">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- files created by me !-->
@@ -30,30 +32,72 @@
     
 </head>
 <body>
-<i class="fa fa-car"></i>
-<i class="fa fa-car" style="font-size:48px;"></i>
-<i class="fa fa-car" style="font-size:60px;color:red;"></i>
-<br><br><br><br><br><br><br>
-  <div class="container primary bg-primary">
-    <div class="row row-eq-height">
-            <div class="col-md-6">
-                <a href="#" id='photoid' >
-                <img  class="img-responsive" src="../static/css/Images/Portfolio/01.jpg" >
-                <p id="textcaptionleft"> text will go here </p>
-                </a>
-            </div> <!-- end of col 1 -->
-    
-            <div class="col-md-6">
-                <a href="#" >
-                  <img  class="img-responsive" src="../static/css/Images/Portfolio/01.jpg" id='photoid'>
-                  </a>
-                  <p id="textcaptionleft"> text will go here </p>
-            </div><!-- end of col 2 -->
-    </div> 
-  </div>   
 
+<div class="cd-projects-container">
+<button class="cd-nav-trigger">Menu<span aria-hidden="true" class="cd-icon"></span></button>
+<nav class="cd-primary-nav">
+        <ul>
+            <li class="cd-label">Navigation</li>
+            <li><a href="#0">The team</a></li>
+            <li><a href="#0">Our services</a></li>
+            <li><a href="#0">Our projects</a></li>
+            <li><a href="#0">Contact us</a></li>
+        </ul>
+    </nav> 
+    <!-- .cd-primary-nav -->
+        <ul>
+            <li class="single-project">
+                <div class="cd-title">
+                    <h2>Project 1</h2>
+                </div> <!-- .cd-title -->
 
+                <div class="cd-project-info">
+                    <button class="cd-scroll">Scroll down</button>
+                    
+                    <div class="content-wrapper">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                        </p>
+                    </div>
+                </div> <!-- .cd-project-info -->
+            </li>
+
+            <li class="single-project">
+                <div class="cd-title">
+                    <h2>Project 2</h2>
+                </div> <!-- .cd-title -->
+
+                <div class="cd-project-info">
+                    <button class="cd-scroll">Scroll down</button>
+
+                    <div class="content-wrapper">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur 
+                        </p>
+                    </div>
+                </div> <!-- .cd-project-info -->
+            </li>
+
+            <li class="single-project">
+                <div class="cd-title">
+                    <h2>Project 3</h2>
+                </div> <!-- .cd-title -->
+
+                <div class="cd-project-info">
+                    <button class="cd-scroll">Scroll down</button>
+                    
+                    <div class="content-wrapper">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur 
+                        </p>
+                    </div>
+                </div> <!-- .cd-project-info -->
+            </li>
+        </ul>
+</div> <!-- .cd-projects-container -->
 
  <script src="../static/js/bootstrap.min.js"></script>
+ <script src="../static/js/jquery.js"></script>
+ <script src="../static/js/landingpage.js"></script>
 </body>
 </html>
