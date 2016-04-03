@@ -17,6 +17,13 @@ body.lb-disable-scrolling {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
   display: none;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.lightboxOverlay * {
+  padding: 0 !important;
+  margin: 0 !important;
+  display: inline-block;
 }
 
 .lightbox {
@@ -28,7 +35,10 @@ body.lb-disable-scrolling {
   line-height: 0;
   font-weight: normal;
 }
-
+.lightbox *{
+  padding: 0 !important;
+  /*margin: 0 !important;*/
+}
 .lightbox .lb-image {
   display: block;
   height: auto;
