@@ -1,0 +1,25 @@
+/* -------------------------------- 
+
+Cards
+
+-------------------------------- */
+/*div{
+padding: 0 !important;
+   margin: 0 !important;
+   display: block;
+}*/
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+ /*  display: block;*/
+}
+.img-thumbnail img { 
+height:40px; 
+}
+
+/*.rowpic{
+  padding: 0 !important;
+  margin: 0 !important;
+  display: inline-block;
+}*/
