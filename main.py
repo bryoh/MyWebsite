@@ -38,9 +38,9 @@ def portfolio_():
 
 
 
-@app.route("/gallery")
+@app.route("/g")
 def gallery():
-    return render_template("Portfolio.html")
+    return render_template("profile.html")
 
 
 
