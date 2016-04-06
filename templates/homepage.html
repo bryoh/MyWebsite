@@ -8,6 +8,7 @@
     <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700italic,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 
     <link rel="stylesheet" href="{{url_for('static',filename='css/timeline/style.css') }}">
     <link rel="stylesheet" href="{{url_for('static',filename='css/timeline/reset.css') }}">
@@ -51,7 +52,7 @@
 
             <li class="single-project">
                 <div class="cd-title">
-                    <h2>Timeline</h2>
+                    <h2>Hightlight 2</h2>
                 </div> <!-- .cd-title -->
 
                 <div class="cd-project-info">
@@ -148,7 +149,7 @@
             </div>
 
 
-
+                    
                         <p>
                             Lorem ipsum dolor sit amet, consectetur 
                         </p>
@@ -165,10 +166,44 @@
                     <button class="cd-scroll">Scroll down</button>
                     
                     <div class="content-wrapper">
-                    <a><i href="#" id="seemore" class="fa fa-bars" ></i></a>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur 
-                        </p>
+                            <div class="jumbotron jumbotron-fluid">
+                                <div class="container">
+
+                                      <div class="row">
+                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                          <div class="card">
+                                            <img class="card-img-top" src="{{url_for('static',filename='css/Images/Portfolio/02.jpg')}}" alt="Card image cap">
+                                            <div class="card-block">
+                                              <!-- <h4 class="card-title">This is Card #1</h4> -->
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                          <div class="card card-inverse card-primary text-center">
+                                            <img class="card-img-top" src="{{url_for('static',filename='css/Images/Portfolio/09.jpg')}}" alt="Card image cap">
+                                            <div class="card-block">
+                                              <!-- <h4 class="card-title">This is Card #2</h4> -->
+                                            </div>
+                                          </div>
+                                        </div>  
+
+                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                          <div class="card card-inverse card-success text-center">
+                                            <img class="card-img-top" src="{{url_for('static',filename='css/Images/Portfolio/05.jpg')}}"  alt="Card image cap">
+                                            <div class="card-block">
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>                                
+                            </div>
+
+
+
+                                           
+                        <a><i href="#" id="seemore" class="fa fa-bars" ></i></a>
+                       
                     </div>
                 </div> <!-- .cd-project-info -->
             </li>
