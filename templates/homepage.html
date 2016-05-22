@@ -7,9 +7,11 @@
     <meta charset="utf-8"/>
     <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700italic,700' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{url_for('static',filename='css/timeline/style.css') }}">
     <link rel="stylesheet" href="{{url_for('static',filename='css/timeline/reset.css') }}">
     <link rel="stylesheet" href="{{url_for('static',filename='css/landingpage.css' )}}">
@@ -17,12 +19,24 @@
 
     <script src="{{url_for('static',filename='js/jquery.js')}}"></script>
 
+    <!-- Files created by me -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css') }}">
+    <!-- <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='menustyle.css') }}"> -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/lightbox.css') }}">
+    <link href="{{url_for('static',filename='js/lightbox.js') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/latest.css' )}}">
+    <script src="{{url_for('static',filename='js/npm.js')}}"></script>
+    <script src="{{url_for('static', filename='js//timeline/js/modernizr.js') }}"></script>
+
 
 </head>
 <body>
+
+
+
 <div class="cd-projects-container">
-<button class="cd-nav-trigger">Menu<span aria-hidden="true" class="cd-icon"></span></button>
-<nav class="cd-primary-nav">
+    <button class="cd-nav-trigger">Menu<span aria-hidden="true" class="cd-icon"></span></button>
+    <nav class="cd-primary-nav">
         <ul>
             <li class="cd-label">Navigation</li>
             <li><a href="#0">Blah1</a></li>
@@ -35,125 +49,131 @@
         <ul>
             <li class="single-project">
                 <div class="cd-title">
-                    <h2>Higlight 1</h2>
+                    <h2>Portfolio</h2>
                 </div> <!-- .cd-title -->
 
-                <div class="cd-project-info">
+                <div class="cd-project-info nopadding">
                     <button class="cd-scroll">Scroll down</button>
-                    <div class="content-wrapper">
-                    <a><i href="#" id="seemore" class="fa fa-bars" ></i></a>
+                    <div class="content-wrapper container-fluid nopadding" >
 
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur
-                        </p>
+                                    
+                                            <div class="row col-lg-12 col-md-11 nopadding offs">
+                                                                                            
+                                                                <div class="carousel-item col-lg-4 col-md-4 col-sm-12 col-xs-12 nopadding" id="rowpic">
+                                                                          <div class=" card card-block nopadding" >
+                                                                              <a href="{{url_for('static',filename='css/Images/Portfolio/05.jpg')}}" class="image" data-title="My caption" data-lightbox="Portfolio">
+                                                                                <img class="img-thumbnail nopadding" src="{{url_for('static',filename='css/Images/Portfolio/05.jpg')}}" >
+                                                                              </a>
+                                                                          </div>                      
+                                                                </div>  <!-- end of pic -->
+                                                                
+
+                                                                <div class=" carousel-item col-lg-2 col-md-2 col-sm-12 col-xs-12 nopadding" id="rowpic">
+                                                                          <div class=" card card-block nopadding" >
+                                                                              <a href="{{url_for('static',filename='css/Images/Portfolio/05.jpg')}}" class="image" data-title="My caption" data-lightbox="Portfolio">
+                                                                                <img class="img-thumbnail nopadding" src="{{url_for('static',filename='css/Images/Portfolio/05.jpg')}}" >
+                                                                              </a>
+                                                                          </div>                      
+                                                                </div>  <!-- end of pic -->
+
+                                                                <div class=" carousel-item col-lg-2 col-md-2 col-sm-12 col-xs-12 nopadding" id="rowpic">
+                                                                          <div class=" card card-block nopadding" >
+                                                                              <a href="{{url_for('static',filename='css/Images/Portfolio/05.jpg')}}" class="image" data-title="My caption" data-lightbox="Portfolio">
+                                                                                <img class="img-thumbnail nopadding" src="{{url_for('static',filename='css/Images/Portfolio/05.jpg')}}" >
+                                                                              </a>
+                                                                          </div>                      
+                                                                </div>  <!-- end of pic -->
+                                                        
+                                                                <div class=" carousel-item col-lg-2 col-md-2 col-sm-12 col-xs-12 nopadding" id="rowpic">
+                                                                          <div class=" card card-block nopadding" >
+                                                                              <a href="{{url_for('static',filename='css/Images/Portfolio/05.jpg')}}" class="image" data-title="My caption" data-lightbox="Portfolio">
+                                                                                <img class="img-thumbnail nopadding" src="{{url_for('static',filename='css/Images/Portfolio/05.jpg')}}" >
+                                                                              </a>
+                                                                          </div>                      
+                                                                </div>  <!-- end of pic -->
+                                                                                            
+                                                                <div class=" carousel-item col-lg-2 col-md-2 col-sm-12 col-xs-12 nopadding" id="rowpic">
+                                                                          <div class=" card card-block nopadding" >
+                                                                              <a href="{{url_for('static',filename='css/Images/Portfolio/05.jpg')}}" class="image" data-title="My caption" data-lightbox="Portfolio">
+                                                                                <img class="img-thumbnail nopadding" src="{{url_for('static',filename='css/Images/Portfolio/05.jpg')}}" >
+                                                                              </a>
+                                                                          </div>                      
+                                                                </div>  <!-- end of pic -->
+                                            
+                                                                <div class=" carousel-item col-lg-2 col-md-2 col-sm-12 col-xs-12 nopadding" id="rowpic">
+                                                                          <div class=" card card-block nopadding" >
+                                                                              <a href="{{url_for('static',filename='css/Images/Portfolio/05.jpg')}}" class="image" data-title="My caption" data-lightbox="Portfolio">
+                                                                                <img class="img-thumbnail nopadding" src="{{url_for('static',filename='css/Images/Portfolio/05.jpg')}}" >
+                                                                              </a>
+                                                                          </div>                      
+                                                                </div>  <!-- end of pic -->
+
+                                                
+
+                                                                <div class="carousel-item col-lg-6 col-md-6 col-sm-12 col-xs-12 nopadding " id="rowpic">
+                                                                          <div class=" card card-block nopadding" >
+                                                                              <a href="{{url_for('static',filename='css/Images/Portfolio/05.jpg')}}" class="image" data-title="My caption" data-lightbox="Portfolio">
+                                                                                <img class="img-thumbnail nopadding" src="{{url_for('static',filename='css/Images/Portfolio/05.jpg')}}" >
+                                                                              </a>
+                                                                          </div>                      
+                                                                </div>  <!-- end of pic -->
+                                            
+
+
+
+                                            </div> <!-- end of child row -->
+
+                                    
+
+                                 
+                                                   
                     </div>
                 </div> <!-- .cd-project-info -->
             </li>
 
             <li class="single-project">
                 <div class="cd-title">
-                    <h2>Hightlight 2</h2>
+                    <h2>Timeline</h2>
                 </div> <!-- .cd-title -->
 
                 <div class="cd-project-info">
+                
                     <button class="cd-scroll">Scroll down</button>
 
                     <div class="content-wrapper">
-                    <a><i href="#" id="seemore" class="fa fa-bars" ></i></a>
-    
-            <div class="jumbotron jumbotron-fluid">
-                <!-- <header>
-                        <h1> Timeline And Highlights</h1>
-                </header>    -->         
-                <div class="container">
-                        <div class="cd-timeline-block">
-                            <div class="cd-timeline-img cd-picture">
-                                <img src="{{url_for('static',filename='img/cd-icon-picture.svg')}}" alt="Picture">
-                            </div> 
-                            <!-- cd-timeline-img -->
+                            <h2> Hello world !</h2>  
 
-                            <div class="cd-timeline-content">
-                                <h2>Blah Title 1</h2>
-                                <p>Lorem ipsum dolor sit amet</p>
-                                <a href="#0" class="cd-read-more">Read more</a>
-                                <span class="cd-date">Jan 14</span>
-                            </div> <!-- cd-timeline-content -->
-                        </div> <!-- cd-timeline-block -->
+                            <!-- <div class="container"> -->
+                
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-img cd-picture">
+                                        <img src="{{url_for('static',filename='img/cd-icon-picture.svg')}}" alt="Picture">
+                                    </div> 
+                                    <!-- cd-timeline-img -->
 
-                        <div class="cd-timeline-block">
-                            <div class="cd-timeline-img cd-movie">
-                                <img src="{{url_for('static',filename='img/cd-icon-movie.svg')}}" alt="Movie">
-                            </div> <!-- cd-timeline-img -->
+                                    <div class="cd-timeline-content">
+                                        <h2>Blah Title 1</h2>
+                                        <p>Lorem ipsum dolor sit amet</p>
+                                        <a href="#0" class="cd-read-more">Read more</a>
+                                        <span class="cd-date">Jan 14</span>
+                                    </div> <!-- cd-timeline-content -->
+                                </div> <!-- cd-timeline-block -->
 
-                            <div class="cd-timeline-content">
-                                <h2>Blah titel 2</h2>
-                                <p>Lorem ipsum dolor sit amet?</p>
-                                <a href="#0" class="cd-read-more">Read more</a>
-                                <span class="cd-date">Jan 18</span>
-                            </div> <!-- cd-timeline-content -->
-                        </div> <!-- cd-timeline-block -->
+  
 
-                        <div class="cd-timeline-block">
-                            <div class="cd-timeline-img cd-picture">
-                                <img src="{{url_for('static',filename='img/cd-icon-picture.svg')}}" alt="Picture">
-                            </div> <!-- cd-timeline-img -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-img cd-movie">
+                                        <img src="{{url_for('static',filename='img/cd-icon-movie.svg')}}" alt="Movie">
+                                    </div> <!-- cd-timeline-img -->
 
-                            <div class="cd-timeline-content">
-                                <h2>Blah title 3</h2>
-                                <p>Lorem ipsum.</p>
-                                <a href="#0" class="cd-read-more">Read more</a>
-                                <span class="cd-date">Jan 24</span>
-                            </div> <!-- cd-timeline-content -->
-                        </div> <!-- cd-timeline-block -->
-
-                        <div class="cd-timeline-block">
-                            <div class="cd-timeline-img cd-location">
-                                <img src="{{url_for('static',filename='img/cd-icon-location.svg')}}" alt="Location">
-                            </div> <!-- cd-timeline-img -->
-
-                            <div class="cd-timeline-content">
-                                <h2>Blah title 4</h2>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                                <a href="#0" class="cd-read-more">Read more</a>
-                                <span class="cd-date">Feb 14</span>
-                            </div> <!-- cd-timeline-content -->
-                        </div> <!-- cd-timeline-block -->
-
-                        <div class="cd-timeline-block">
-                            <div class="cd-timeline-img cd-location">
-                                <img src="{{url_for('static',filename='img/cd-icon-location.svg')}}" alt="Location">
-                            </div> <!-- cd-timeline-img -->
-
-                            <div class="cd-timeline-content">
-                                <h2>Blah title 5</h2>
-                                <p>Lorem ipsum dolor sit</p>
-                                <a href="#0" class="cd-read-more">Read more</a>
-                                <span class="cd-date">Feb 18</span>
-                            </div> <!-- cd-timeline-content -->
-                        </div> <!-- cd-timeline-block -->
-
-                        <div class="cd-timeline-block">
-                            <div class="cd-timeline-img cd-movie">
-                                <img src="{{url_for('static',filename='img/cd-icon-movie.svg')}}" alt="Movie">
-                            </div> <!-- cd-timeline-img -->
-
-                            <div class="cd-timeline-content">
-                                <h2>Final Blah</h2>
-                                <p>This is the content of the last section</p>
-                                <span class="cd-date">Feb 26</span>
-                            </div> <!-- cd-timeline-content -->
-                        </div> <!-- cd-timeline-block -->
-                    </section> <!-- cd-timeline -->
-                    
-                </div>
-            </div>
-
-
-                    
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur 
-                        </p>
-                    </div>
+                                    <div class="cd-timeline-content">
+                                        <h2>Final Blah</h2>
+                                        <p>This is the content of the last section</p>
+                                        <span class="cd-date">Feb 26</span>
+                                    </div> <!-- cd-timeline-content -->
+                                </div>  <!-- cd-timeline-block -->
+                      
+                    </div> <!-- end of content wrapper -->
                 </div> <!-- .cd-project-info -->
             </li>
 
@@ -167,51 +187,43 @@
                     
                     <div class="content-wrapper">
                             <div class="jumbotron jumbotron-fluid">
-                                <div class="container">
-
-                                      <div class="row">
-                                        <div class="col-xs-12 col-sm-4 col-md-4">
-                                          <div class="card">
-                                            <img class="card-img-top" src="{{url_for('static',filename='css/Images/Portfolio/02.jpg')}}" alt="Card image cap">
-                                            <div class="card-block">
-                                              <!-- <h4 class="card-title">This is Card #1</h4> -->
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-xs-12 col-sm-4 col-md-4">
-                                          <div class="card card-inverse card-primary text-center">
-                                            <img class="card-img-top" src="{{url_for('static',filename='css/Images/Portfolio/09.jpg')}}" alt="Card image cap">
-                                            <div class="card-block">
-                                              <!-- <h4 class="card-title">This is Card #2</h4> -->
-                                            </div>
-                                          </div>
-                                        </div>  
-
-                                        <div class="col-xs-12 col-sm-4 col-md-4">
-                                          <div class="card card-inverse card-success text-center">
-                                            <img class="card-img-top" src="{{url_for('static',filename='css/Images/Portfolio/05.jpg')}}"  alt="Card image cap">
-                                            <div class="card-block">
-                                              
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>                                
+                             
                             </div>
 
 
 
                                            
-                        <a><i href="#" id="seemore" class="fa fa-bars" ></i></a>
+                        
                        
                     </div>
                 </div> <!-- .cd-project-info -->
             </li>
         </ul>
 </div> <!-- .cd-projects-container -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <script type="text/javascript" src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
 <script type="text/javascript" src="{{url_for('static',filename='js/jquery.js')}}"></script>
 <script type="text/javascript" src="{{url_for('static',filename='js/landingpage.js')}}"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="{{url_for('static', filename='js/timeline/js/main.js') }}"></script>
+<script src="{{url_for('static',filename='js/lightbox.js')}}"></script> <!-- for the carousel -->
+
+   <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });    
+    </script>
 <!-- 
  <script src="../static/js/bootstrap.min.js"></script>
  <script src="../static/js/jquery.js"></script>

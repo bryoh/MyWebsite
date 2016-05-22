@@ -1,0 +1,8 @@
+[OS specific]
+	1. Upgrade python
+	2. Update OS
+
+
+[PROJECT]
+	1. Use databases to manage data
+	
