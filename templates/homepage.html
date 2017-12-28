@@ -39,10 +39,10 @@
     <nav class="cd-primary-nav">
         <ul>
             <li class="cd-label">Navigation</li>
-            <li><a href="#0">Blah1</a></li>
-            <li><a href="#0">Blah2</a></li>
-            <li><a href="#0">Blah 3</a></li>
-            <li><a href="#0">Connect with me</a></li>
+            <li><a href="{{url_for('hightlights_') }}">Highlights</a></li>
+            <li><a href="{{url_for('portfolio_') }}">Portfolio</a></li>
+            <li><a href="{{url_for('latest') }}">Latest</a></li>
+            <li><a href="{{url_for('gallery') }}">Connect with me</a></li>
         </ul>
     </nav> 
     <!-- .cd-primary-nav -->
@@ -117,16 +117,7 @@
                                                                               </a>
                                                                           </div>                      
                                                                 </div>  <!-- end of pic -->
-                                            
-
-
-
                                             </div> <!-- end of child row -->
-
-                                    
-
-                                 
-                                                   
                     </div>
                 </div> <!-- .cd-project-info -->
             </li>
@@ -137,42 +128,18 @@
                 </div> <!-- .cd-title -->
 
                 <div class="cd-project-info">
-                
                     <button class="cd-scroll">Scroll down</button>
-
                     <div class="content-wrapper">
-                            <h2> Hello world !</h2>  
+                        <h4> Text Description </h4>
+                        </br>
+                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis aute irure dolor in reprehenderit in voluptate velit.
+                            Qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit. Et harum quidem rerum facilis est et expedita distinctio. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                            Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+                            Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Fugiat quo voluptas nulla pariatur? Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa. Nihil molestiae consequatur, vel illum qui dolorem eum. Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Animi, id est laborum et dolorum fuga.
+                        </p>
 
-                            <!-- <div class="container"> -->
-                
-                                <div class="cd-timeline-block">
-                                    <div class="cd-timeline-img cd-picture">
-                                        <img src="{{url_for('static',filename='img/cd-icon-picture.svg')}}" alt="Picture">
-                                    </div> 
-                                    <!-- cd-timeline-img -->
-
-                                    <div class="cd-timeline-content">
-                                        <h2>Blah Title 1</h2>
-                                        <p>Lorem ipsum dolor sit amet</p>
-                                        <a href="#0" class="cd-read-more">Read more</a>
-                                        <span class="cd-date">Jan 14</span>
-                                    </div> <!-- cd-timeline-content -->
-                                </div> <!-- cd-timeline-block -->
-
-  
-
-                                <div class="cd-timeline-block">
-                                    <div class="cd-timeline-img cd-movie">
-                                        <img src="{{url_for('static',filename='img/cd-icon-movie.svg')}}" alt="Movie">
-                                    </div> <!-- cd-timeline-img -->
-
-                                    <div class="cd-timeline-content">
-                                        <h2>Final Blah</h2>
-                                        <p>This is the content of the last section</p>
-                                        <span class="cd-date">Feb 26</span>
-                                    </div> <!-- cd-timeline-content -->
-                                </div>  <!-- cd-timeline-block -->
-                      
                     </div> <!-- end of content wrapper -->
                 </div> <!-- .cd-project-info -->
             </li>
@@ -186,15 +153,10 @@
                     <button class="cd-scroll">Scroll down</button>
                     
                     <div class="content-wrapper">
-                            <div class="jumbotron jumbotron-fluid">
-                             
+                            <div class="jumbotron">
+                                <h3>Some text insided well/Jumbotron to draw attention</h3>
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                             </div>
-
-
-
-                                           
-                        
-                       
                     </div>
                 </div> <!-- .cd-project-info -->
             </li>
@@ -224,10 +186,10 @@
         $("#wrapper").toggleClass("toggled");
     });    
     </script>
-<!-- 
+<!--
  <script src="../static/js/bootstrap.min.js"></script>
  <script src="../static/js/jquery.js"></script>
- <script src="../static/js/landingpage.js"></script> -->
+ <script src="../static/js/landingpage.js"></script>-->
 </body>    
 
 

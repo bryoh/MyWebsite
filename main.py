@@ -30,7 +30,7 @@ def menu_():
     return render_template("menupage.html")
 
 
-@app.route("/p")
+@app.route("/portfol")
 def portfolio_():
     return render_template("Portfolio.html")
 
@@ -54,6 +54,6 @@ def index():
 '''
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=True)
+    app.run()
 
 
