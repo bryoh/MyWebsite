@@ -10,6 +10,11 @@ def index():
     return render_template("homepage.html")
 
 
+@app.route("/menu")
+def menu():
+    return render_template("menupage.html")
+
+
 @app.route("/about")
 def about():
     return render_template("about.html")
@@ -25,19 +30,9 @@ def latest():
     return render_template("latest.html")
 
 
-@app.route("/menu")
-def menu():
-    return render_template("menupage.html")
-
-
 @app.route("/portfolio")
 def portfolio():
     return render_template("Portfolio.html")
-
-
-@app.route("/gallery")
-def gallery():
-    return render_template("profile.html")
 
 
 
