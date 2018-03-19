@@ -5,19 +5,19 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
+@app.route("/")
+def index():
+    return render_template("homepage.html")
+
+
 @app.route("/about")
 def about():
     return render_template("about.html")
 
 
 @app.route("/highlights")
-def hightlights_():
+def highlights():
     return render_template("highlights.html")
-
-
-@app.route("/")
-def index():
-    return render_template("homepage.html")
 
 
 @app.route("/latest")
@@ -26,19 +26,16 @@ def latest():
 
 
 @app.route("/menu")
-def menu_():
+def menu():
     return render_template("menupage.html")
 
 
-@app.route("/portfol")
-def portfolio_():
+@app.route("/portfolio")
+def portfolio():
     return render_template("Portfolio.html")
 
 
-
-
-
-@app.route("/g")
+@app.route("/gallery")
 def gallery():
     return render_template("profile.html")
 
