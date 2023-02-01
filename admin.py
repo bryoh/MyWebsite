@@ -13,7 +13,7 @@ def index():
     return '<a href="/admin/"> click here </a>'
 
 if __name__ == '__main__':
-    path = os.getcwd() + '/static'
+    path = f'{os.getcwd()}/static'
     FileAdmin.can_mkdir = False
     admin = admin.Admin(app, 'Welcome to your admin page')
     admin.add_view(fileadmin.FileAdmin(path, 'static'))
